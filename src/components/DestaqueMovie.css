@@ -79,14 +79,15 @@
     color: white;
 }
 .Destaque--genres {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
     font-size: 1.8rem;
     color: #999;
 }
 
 @media screen and (max-width:768px) {
     .Destaque {
-        height: 90vh;
+        height: 100%;
     }
     .Destaque--name {
         font-size: 3rem;
