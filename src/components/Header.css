@@ -1,0 +1,42 @@
+header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background: transparent;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+header.DarkHeader {
+    background: #141414f3;
+}
+
+.header--logo {
+    height: 4rem;
+}
+.header--user{
+    height: 5rem;
+}
+.header--logo img,.header--user img {
+    height: 100%;
+    border-radius: .5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .header--logo {
+        height: 2.5rem;
+    }
+    .header--user{
+        height: 3rem;
+    }
+}

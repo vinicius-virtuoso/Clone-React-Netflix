@@ -1,0 +1,93 @@
+.movieRow {
+    margin-bottom: 3rem;
+}
+.movieRow h2 {
+    font-size: 4rem;
+    margin: 0 0 0 3rem;
+}
+
+.movieRow--listarea {
+    overflow-x: hidden;
+    padding-left: 3rem;
+}
+.movieRow--list {
+    transition:all 0.4s ease-in-out;
+    -webkit-transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -ms-transition:all 0.4s ease-in-out;
+    -o-transition:all 0.4s ease-in-out;
+}
+
+.movieRow--movie {
+    width: 15rem;
+    display: inline-block;
+    cursor: pointer;
+    overflow-y: hidden;
+}
+
+.movieRow--movie img{
+    width:100%;
+    max-height: 22.5rem;
+    min-height: 22.5rem;
+
+
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+}
+.movieRow--movie img:hover{
+    width:100%;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+.movieRow--left,
+.movieRow--right {
+    position:absolute;
+    width: 4rem;
+    height: 22.5rem;
+    background-color:rgba(0,0,0,0.6);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    overflow: hidden;
+}
+.movieRow:hover .movieRow--left,
+.movieRow:hover .movieRow--right {
+    opacity: 1;
+}
+.movieRow--left {
+    left: 0;
+}
+.movieRow--right {
+    right: 0;
+}
+
+@media screen and (max-width: 768px) { 
+    .movieRow--left,
+    .movieRow--right {
+        opacity: 1;
+    }
+    .movieRow h2 {
+        font-size: 2rem;
+        margin: 0 0 0 3rem;
+    }
+    
+}
